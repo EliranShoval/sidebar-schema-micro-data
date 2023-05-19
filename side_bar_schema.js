@@ -15,11 +15,9 @@ for(let i = 0; i < linksOfSidebar.length; i++){
 
 let imagesOfSidebar = document.querySelectorAll('Write class. / id# / types[] / elements /');
 for(let i = 0; i < imagesOfSidebar.length; i++){
-    imagesOfSidebar[i].setAttribute('itemprop','image');
+    if(imagesOfSidebar.length){
+   imagesOfSidebar[i].setAttribute('itemprop','image');
+    }
 };
-
-let headlineOfSidebar = document.querySelector('Write class. / id# / types[] / elements /');
-headlineOfSidebar.setAttribute('itemprop','headline');
-
 console.log(sidebarSchema);
 }
